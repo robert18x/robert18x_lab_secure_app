@@ -1,5 +1,11 @@
 name: Perform Mixeway Scan
 
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
 jobs: 
   mixeway-scan: 
     name: Mixeway Scanning 
